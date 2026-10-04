@@ -34,6 +34,7 @@ import java.util.List;
 import java.util.UUID;
 
 @SpringBootApplication
+@EnableConfigurationProperties(MinioProperties.class)
 public class KnoteApplication {
 
     public static void main(String[] args) {
