@@ -71,7 +71,7 @@ public class MinioStorageService {
             client.putObject(PutObjectArgs.builder()
                     .bucket(properties.getBucket())
                     .object(objectName)
-                    .stream(input, file.getSize(), -1)
+                    .stream(input, file.getSize(), -1L)
                     .contentType(contentType)
                     .build());
         }
